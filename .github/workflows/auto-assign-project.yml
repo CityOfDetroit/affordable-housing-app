@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Assign to One Project
     steps:
-    - run: echo "what is this ${{ github.event }}"
+    - run: echo "what is this ${{ toJson(github.event) }}"
     - run: echo "does this return true? ${{ github.event == 'Issue' }}"
-    - run: echo "what about this? ${{ github.event.issue }}"
+    - run: echo "what about this? ${{ toJson(github.event.issue) }}"
     - run: echo "maybe this? ${{ github.event.name == 'issue' }}"
     - name: Assign NEW issues to the Backlog project
       uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event == 'Issue' && github.event.action == 'opened'
+      if: github.event.action == 'opened'
       with:
         project: 'https://github.com/CityOfDetroit/affordable-housing-app/projects/2'
         column_name: 'Needs triage'
