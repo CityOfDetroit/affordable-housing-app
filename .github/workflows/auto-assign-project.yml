@@ -16,8 +16,8 @@ jobs:
     - name: Assign NEW issues to the Backlog project
       uses: srggrs/assign-one-project-github-action@1.2.1
       if: |
-        github.event.action == 'opened' &&
-        github.event == 'issue'
+        github.event == 'issue' &&
+        github.event.action == 'opened'
       with:
         project: 'https://github.com/CityOfDetroit/affordable-housing-app/projects/2'
         column_name: 'Needs triage'
