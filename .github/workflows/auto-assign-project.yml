@@ -1,5 +1,4 @@
 name: Assign to One Project
-description: 'Rules for auto-assigning projects'
 
 on:
   issues:
