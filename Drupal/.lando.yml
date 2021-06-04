@@ -1,0 +1,4 @@
+name: local_test
+recipe: drupal9
+config:
+  webroot: web
