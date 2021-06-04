@@ -1,0 +1,6 @@
+services:
+  hello_world.salutation:
+    class: Drupal\hello_world\HelloWorldSalutation
+    tags:
+      - {name: tag_name}
+      

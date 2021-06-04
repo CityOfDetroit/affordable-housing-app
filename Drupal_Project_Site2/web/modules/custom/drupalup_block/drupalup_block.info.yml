@@ -1,0 +1,5 @@
+name: Drupal Up Block
+description: Building a simple block module
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
