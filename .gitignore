@@ -105,4 +105,4 @@ dist
 
 # DS_store files
 
-Drupal/.DS_Store
+.DS_Store
