@@ -108,3 +108,6 @@ dist
 
 # Core Modules
 Drupal/web/core
+
+# Vendor
+Drupal/vendor
