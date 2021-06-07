@@ -111,3 +111,9 @@ Drupal/web/core
 
 # Vendor
 Drupal/vendor
+
+Drupal/web/sites/default/files/css/*
+
+Drupal/web/sites/default/files/js/*
+
+Drupal/web/sites/default/files/php/twig/*
